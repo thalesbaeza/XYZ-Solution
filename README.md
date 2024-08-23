@@ -25,11 +25,11 @@ Siga as etapas abaixo para configurar o projeto localmente usando Docker:
    cd XYZ-Solution
 
 2. **Construa as imagens no Docker:**
-
+    ```bash
     docker-compose build
 
 3. **Inicie os contêineres:**
-
+    ```bash
     docker-compose up
 
 # Estrutura do Projeto
