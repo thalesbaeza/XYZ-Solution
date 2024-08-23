@@ -42,31 +42,31 @@ Siga as etapas abaixo para configurar o projeto localmente usando Docker:
 XYZ-Solution/
 │
 ├── downloads/
-│   └── data_export.csv       # Diretório para exportar arquivos
+│ └── data_export.csv # Diretório para exportar arquivos
 │
-├── uploads/                 # Diretório para armazenar uploads de arquivos
-│   └── pagamentos_20231011.rem  # Exemplo de arquivo .rem
+├── uploads/ # Diretório para armazenar uploads de arquivos
+│ └── pagamentos_20231011.rem # Exemplo de arquivo .rem
 │
 ├── routes/
-│   ├── fileRoutes.js        # Rotas para upload de arquivos
-│   └── dataRoutes.js        # Rotas para manipulação de dados
+│ ├── fileRoutes.js # Rotas para upload de arquivos
+│ └── dataRoutes.js # Rotas para manipulação de dados
 │
 ├── controllers/
-│   ├── fileController.js    # Lógica para upload e processamento de arquivos
-│   └── dataController.js    # Lógica para manipulação de dados
+│ ├── fileController.js # Lógica para upload e processamento de arquivos
+│ └── dataController.js # Lógica para manipulação de dados
 │
 ├── models/
-│   └── dataModel.js         # Modelo para manipulação dos dados do arquivo
+│ └── dataModel.js # Modelo para manipulação dos dados do arquivo
 │
 ├── insomnia/
-│   └── Insomnia_2024-08-23.json  # Importar JSON no Insomnia para ter acesso aos endpoints
+│ └── Insomnia_2024-08-23.json # Importar JSON no Insomnia para ter acesso aos endpoints
 │
-├── .gitignore               # Arquivos e diretórios ignorados pelo Git
-├── docker-compose.yml       # Arquivo de configuração do Docker Compose
-├── Dockerfile               # Dockerfile para configurar o contêiner Node.js
-├── package.json             # Gerenciador de dependências Node.js
-├── app.js                   # Arquivo principal da aplicação
-└── README.md                # Documentação do projeto
+├── .gitignore # Arquivos e diretórios ignorados pelo Git
+├── docker-compose.yml # Arquivo de configuração do Docker Compose
+├── Dockerfile # Dockerfile para configurar o contêiner Node.js
+├── package.json # Gerenciador de dependências Node.js
+├── app.js # Arquivo principal da aplicação
+└── README.md # Documentação do projeto
 
 # Configurando o Insomnia
 
