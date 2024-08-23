@@ -10,8 +10,6 @@ XYZ Solution é uma aplicação Node.js que processa arquivos `.rem`, armazena d
 - [Endpoints da API](#endpoints-da-api)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Configuração do Insomnia](#configuração-do-insomnia)
-- [Contribuindo](#contribuindo)
-- [Licença](#licença)
 
 ## Pré-requisitos
 
@@ -84,7 +82,6 @@ Siga as etapas abaixo para configurar o projeto localmente usando Docker:
 
 3. **Adicione as Requisições**
 
-
 # Endpoints
 
 1. **Criar Dados**
@@ -93,6 +90,7 @@ Siga as etapas abaixo para configurar o projeto localmente usando Docker:
     * URL: http://localhost:3000/api/data/
     * Configuração do Corpo: Selecione JSON e adicione o seguinte payload:
 
+``` json
 {
   "nome": "João",
   "idade": 25,
@@ -101,6 +99,7 @@ Siga as etapas abaixo para configurar o projeto localmente usando Docker:
   "valor_pago": 100.50,
   "data_nascimento": "1999-01-01"
 }
+```
 
 2. **Buscar Dados**
     * Método HTTP: GET
@@ -116,11 +115,12 @@ Siga as etapas abaixo para configurar o projeto localmente usando Docker:
     * URL: http://localhost:3000/api/data/:id
     * Substitua :id pelo ID do registro que deseja atualizar (por exemplo, http://localhost:3000/api/data/1).
     * Configuração do Corpo: Selecione JSON e adicione o campo que deseja atualizar:
-
+      
+``` json
 {
   "endereco": "Rua B, 456"
 }
-
+```
 5. **Upload de Arquivos**
     * Método HTTP: POST
     * URL: http://localhost:3000/api/files/upload
