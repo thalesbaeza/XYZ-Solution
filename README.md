@@ -131,6 +131,11 @@ Siga as etapas abaixo para configurar o projeto localmente usando Docker:
     * Método HTTP: GET
     * URL: http://localhost:3000/api/files/export
 
+
+7. **Paginação dos dados**
+    * Método HTTP: GET
+    * URL: http://localhost:3000/api/data/paginated
+
 ## Configuração do Insomnia
     * Para aumentar o tempo limite das requisições para 5 minutos:
 
