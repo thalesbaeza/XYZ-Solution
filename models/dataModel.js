@@ -72,9 +72,34 @@ const updateData = async (id, data) => {
     }
 };
 
+const getPaginatedData = async (page, limit) => {
+    const offset = (page - 1) * limit;
+    try {
+      const result = await pool.query(
+        'SELECT * FROM pagamentos ORDER BY id LIMIT $1 OFFSET $2',
+        [limit, offset]
+      );
+      const countResult = await pool.query('SELECT COUNT(*) FROM pagamentos');
+      const totalItems = parseInt(countResult.rows[0].count, 10);
+      const totalPages = Math.ceil(totalItems / limit);
+      return {
+        data: result.rows,
+        pagination: {
+          currentPage: page,
+          totalPages: totalPages,
+          totalItems: totalItems,
+        },
+      };
+    } catch (err) {
+      console.error('Error executing query', err.stack);
+      throw err;
+    }
+  };
+
 module.exports = {
   insertData,
   getData,
   deleteData,
-  updateData
+  updateData,
+  getPaginatedData
 };

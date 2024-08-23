@@ -1,4 +1,4 @@
-const { insertData, getData, deleteData, updateData } = require('../models/dataModel');
+const { insertData, getData, deleteData, updateData, getPaginatedData } = require('../models/dataModel');
 
 const createData = async (req, res) => {
   try {
@@ -34,6 +34,16 @@ const deleteDataHandler = async (req, res) => {
     }
   };
 
+  const fetchPaginatedData = async (req, res) => {
+    const page = parseInt(req.query.page, 10) || 1;
+    const limit = parseInt(req.query.limit, 10) || 10;
+    try {
+      const paginatedData = await getPaginatedData(page, limit);
+      res.status(200).json(paginatedData);
+    } catch (err) {
+      res.status(500).json({ error: 'Erro ao buscar dados paginados' });
+    }
+  };
 
   const patchData = async (req, res) => {
     const id = parseInt(req.params.id, 10);
@@ -55,4 +65,5 @@ module.exports = {
   fetchData,
   deleteDataHandler,
   patchData,
+  fetchPaginatedData
 };
