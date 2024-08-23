@@ -1,6 +1,6 @@
 # XYZ Solution
 
-XYZ Solution é uma aplicação Node.js que processa arquivos `.rem`, armazena dados em um banco de dados PostgreSQL e permite o upload de arquivos via API. Todo o ambiente de desenvolvimento está configurado usando Docker.
+XYZ Solution é uma aplicação Node.js projetada para processar arquivos no formato `.rem`, armazenar e gerenciar dados em um banco de dados PostgreSQL e fornecer uma API robusta para manipulação desses dados. A aplicação é configurada para funcionar em um ambiente de desenvolvimento totalmente contêinerizado utilizando Docker, facilitando a configuração e o gerenciamento do ambiente de desenvolvimento.
 
 ## Índice
 
