@@ -6,7 +6,6 @@ XYZ Solution é uma aplicação Node.js que processa arquivos `.rem`, armazena d
 
 - [Pré-requisitos](#pré-requisitos)
 - [Instalação e Configuração](#instalação-e-configuração)
-- [Uso](#uso)
 - [Endpoints da API](#endpoints-da-api)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Configuração do Insomnia](#configuração-do-insomnia)
@@ -68,7 +67,7 @@ Siga as etapas abaixo para configurar o projeto localmente usando Docker:
    └── README.md                # Documentação do projeto
    ```
 
-# Configurando o Insomnia
+# Endpoints da API
 
 1. **Importando a Configuração**
     * Abra o Insomnia e vá para o menu "Workspace".
@@ -132,7 +131,7 @@ Siga as etapas abaixo para configurar o projeto localmente usando Docker:
     * Método HTTP: GET
     * URL: http://localhost:3000/api/files/export
 
-# Configurando Timeout no Insomnia
+## Configuração do Insomnia
     * Para aumentar o tempo limite das requisições para 5 minutos:
 
         * No Insomnia, clique no ícone de engrenagem no canto inferior direito.
